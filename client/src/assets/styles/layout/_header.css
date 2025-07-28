@@ -1,0 +1,66 @@
+/* Header/Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4) var(--space-6);
+  background-color: white;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-40);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: var(--text-xl);
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 i {
+  margin-right: var(--space-2);
+  color: var(--primary-color);
+}
+
+.navbar ul {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.navbar a {
+  font-weight: var(--font-medium);
+  transition: var(--transition-colors);
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navbar .active {
+  color: var(--primary-color);
+}
+
+/* Mobile menu styles would go here */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: var(--space-3);
+  }
+  
+  .navbar ul {
+    margin-top: var(--space-3);
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    padding: var(--space-2) 0;
+    border-bottom: var(--border-width) solid var(--gray-200);
+  }
+}

@@ -1,0 +1,90 @@
+/* Margin Utilities */
+.m-0 { margin: 0; }
+.m-1 { margin: var(--space-1); }
+.m-2 { margin: var(--space-2); }
+.m-3 { margin: var(--space-3); }
+.m-4 { margin: var(--space-4); }
+.m-5 { margin: var(--space-5); }
+.m-6 { margin: var(--space-6); }
+.m-8 { margin: var(--space-8); }
+.m-10 { margin: var(--space-10); }
+.m-12 { margin: var(--space-12); }
+.m-16 { margin: var(--space-16); }
+.m-20 { margin: var(--space-20); }
+.m-24 { margin: var(--space-24); }
+.m-32 { margin: var(--space-32); }
+.m-auto { margin: auto; }
+
+/* Margin Top */
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: var(--space-1); }
+/* ... up to mt-32 and mt-auto */
+
+/* Margin Right */
+.mr-0 { margin-right: 0; }
+.mr-1 { margin-right: var(--space-1); }
+/* ... up to mr-32 and mr-auto */
+
+/* Margin Bottom */
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: var(--space-1); }
+/* ... up to mb-32 and mb-auto */
+
+/* Margin Left */
+.ml-0 { margin-left: 0; }
+.ml-1 { margin-left: var(--space-1); }
+/* ... up to ml-32 and ml-auto */
+
+/* Margin X (left & right) */
+.mx-0 { margin-left: 0; margin-right: 0; }
+.mx-1 { margin-left: var(--space-1); margin-right: var(--space-1); }
+/* ... up to mx-32 and mx-auto */
+
+/* Margin Y (top & bottom) */
+.my-0 { margin-top: 0; margin-bottom: 0; }
+.my-1 { margin-top: var(--space-1); margin-bottom: var(--space-1); }
+/* ... up to my-32 and my-auto */
+
+/* Padding Utilities (same pattern as margin) */
+.p-0 { padding: 0; }
+.p-1 { padding: var(--space-1); }
+/* ... up to p-32 */
+
+.pt-0 { padding-top: 0; }
+.pt-1 { padding-top: var(--space-1); }
+/* ... up to pt-32 */
+
+.pr-0 { padding-right: 0; }
+.pr-1 { padding-right: var(--space-1); }
+/* ... up to pr-32 */
+
+.pb-0 { padding-bottom: 0; }
+.pb-1 { padding-bottom: var(--space-1); }
+/* ... up to pb-32 */
+
+.pl-0 { padding-left: 0; }
+.pl-1 { padding-left: var(--space-1); }
+/* ... up to pl-32 */
+
+.px-0 { padding-left: 0; padding-right: 0; }
+.px-1 { padding-left: var(--space-1); padding-right: var(--space-1); }
+/* ... up to px-32 */
+
+.py-0 { padding-top: 0; padding-bottom: 0; }
+.py-1 { padding-top: var(--space-1); padding-bottom: var(--space-1); }
+/* ... up to py-32 */
+
+/* Spacing for specific components */
+.main {
+  padding: var(--space-8) 0;
+  min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+}
+
+.section {
+  padding: var(--space-8) 0;
+}
+
+.container-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+}
