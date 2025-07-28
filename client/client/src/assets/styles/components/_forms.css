@@ -1,0 +1,157 @@
+/* Form Styles */
+.form-group {
+  margin-bottom: var(--space-4);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: var(--font-medium);
+  color: var(--gray-700);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: var(--space-3);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--gray-700);
+  background-color: white;
+  background-clip: padding-box;
+  border: var(--border-width) solid var(--gray-300);
+  border-radius: var(--border-radius);
+  transition: var(--transition-all);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-control::placeholder {
+  color: var(--gray-400);
+  opacity: 1;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: var(--gray-100);
+  opacity: 1;
+}
+
+textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: var(--space-3);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--gray-700);
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right var(--space-3) center;
+  background-size: 16px 12px;
+  border: var(--border-width) solid var(--gray-300);
+  border-radius: var(--border-radius);
+  appearance: none;
+}
+
+.form-select:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-select:disabled {
+  background-color: var(--gray-100);
+}
+
+.form-check {
+  display: block;
+  min-height: var(--text-base);
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-3);
+}
+
+.form-check-input {
+  float: left;
+  margin-left: calc(var(--space-6) * -1);
+  width: var(--space-4);
+  height: var(--space-4);
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: var(--border-width) solid var(--gray-300);
+  appearance: none;
+  color-adjust: exact;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-check-input:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
+/* Form Validation */
+.is-invalid .form-control,
+.is-invalid .form-select {
+  border-color: var(--danger-color);
+}
+
+.is-invalid .form-control:focus,
+.is-invalid .form-select:focus {
+  border-color: var(--danger-color);
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--danger-color);
+}
+
+.is-invalid .invalid-feedback {
+  display: block;
+}
+
+/* Auth Forms */
+.auth-container {
+  max-width: 400px;
+  margin: var(--space-8) auto;
+  padding: var(--space-6);
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.auth-container h1 {
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.auth-container p {
+  text-align: center;
+  margin-bottom: var(--space-6);
+  color: var(--gray-600);
+}
